@@ -102,12 +102,12 @@ body {
 }
 
 #logo {
-
+    
+    position: absolute;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 400px;
-    top: 0;
     left: 500px;
     animation-name: imagem_home1;
     animation-duration: 1s;
@@ -203,6 +203,13 @@ body {
         font-size: 20px;
     }
 
+    #logo {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
     #logo_ui{
         visibility: hidden;
     }
@@ -223,7 +230,7 @@ body {
         text-align: center;
         padding: 0px;
         position: absolute;
-        font-size: 60px;
+        font-size: 40px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: #335033;
     
@@ -231,11 +238,11 @@ body {
     
     .quem_somos p{
         text-align: center;
-        margin-top: 150px;
+        margin-top: 20%;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        font-size: 20px;
+        font-size: 12px;
         width: 80%;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
