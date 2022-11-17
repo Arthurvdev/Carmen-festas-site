@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(53, 53, 53);
+    height: 2000px;
+}
+
+/*Barra de Navegação*/
+
+.menu {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    top: 0px;
+    margin-top: 5px;
+    box-shadow: rgb(75, 75, 75) 0px 2px 8px 0px;
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 100%;
+    display: block;
+    
+}
+
+.menu ul li{
+    float: left;
+    width: 150px;
+    text-align: center;
+}
+
+.menu ul li:hover{
+    background-color: #d0ffd0;
+    margin-top: 2px;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+.menu ul li:hover a{
+    color: #000000;
+    transition: (0.5s);
+}
+
+.menu ul li:active {
+    transform: scale(0.8);
+    transition: (0.5s);
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: -apple-system, BlinkMacSystemFont,
+     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 20px;
+    transition: (0.5s);
+    transform: scale(0.8);
+}
+
+#logo_ui{
+    position: absolute;
+    width: 50px;
+    margin-left: 30px;
+
+}
+
+/* banner */
+
+.banner {
+    margin-top: 0px;
+    background-color:  #d0ffd0;
+    width: 100%;
+    height: 420px;
+}
+
+#logo {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    left: 500px ;
+    animation-name: imagem_home1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+
+@keyframes imagem_home1{
+    0%{
+        top: 15px;
+    }
+
+    100%{
+        top: 25px
+    }
+}
+
+/*Quem somos*/
+
+.quem_somos {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    margin-top: 10px;
+    height: 550px;
+    box-shadow: #000000 10px 5px 10px 10px;
+}
+
+.quem_somos h1{
+    margin-top: 30px;
+    padding: 60px;
+    position: absolute;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #335033;
+
+}
+
+.quem_somos p{
+    margin-top: 150px;
+    padding: 60px;
+    position: absolute;
+    font-size: 20px;
+    width: 50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#foto1 {
+    position: absolute;
+    width: 500px;
+    padding: 15px;
+    margin-top: 8px;
+    margin-left: 750px;
+    border-radius: 40px;
+    border: #335033 solid 2px ;
+}
