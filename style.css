@@ -8,27 +8,32 @@ body {
     height: 2000px;
 }
 
+
+
+
 /*Barra de Navegação*/
 
-.categorias {
-    margin-left: 10px;
-    margin-top: 10px;
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    background-color: rgb(231, 205, 255);
-    border-radius: 20px;
+
+#menu-btn-edit {
+    border-radius: 10px;
+    margin:10px;
+    border: none;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    visibility: hidden;
 }
 
-
-#categorias_img {
-    margin-top: -15px;
-    margin-left: -20px;
-    position: absolute;
-    width: 40px;
-
+#img-btn{
+    margin: 5px;
+    width: 25px;
+    height: 20px;
+    border: none;
 }
+
+/*NAVBAR TOTAL*/
 
 .menu {
     width: 100%;
@@ -48,7 +53,6 @@ body {
     margin-top: 10px;
     width: 100%;
     display: block;
-    
 }
 
 .menu ul li{
@@ -87,6 +91,77 @@ body {
 
 }
 
+
+
+
+
+
+
+/*NAVBAR MOBILE*/
+
+.mobile-bar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    top: 0px;
+    margin-top: 5px;
+    box-shadow: rgb(75, 75, 75) 0px 2px 8px 0px;
+    visibility: hidden;
+}
+
+.mobile-bar ul {
+    position: relative;
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 100%;
+    display: block;
+}
+
+.mobile-bar ul li{
+    float: left;
+    width: 150px;
+    text-align: center;
+}
+
+.mobile-bar a{
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: -apple-system, BlinkMacSystemFont,
+     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 20px;
+    transition: (0.5s);
+}
+
+.mobile-bar a:hover{
+    color: (231, 81, 231);
+    border: solid rgb(231, 205, 255);
+    border-radius: 20px;
+}
+
+.mobile-bar a:active{
+    transform: scale(0.10);
+}
+
+#logo_ui2{
+    position: absolute;
+    width: 50px;
+    margin-left: 30px;
+
+}
+
+
+
+
+
+
+
 /* banner */
 
 .banner {
@@ -121,6 +196,11 @@ body {
         top: 25px
     }
 }
+
+
+
+
+
 
 /*Quem somos*/
 
@@ -169,6 +249,9 @@ body {
     border-radius: 40px;
     border: #335033 solid 2px ;
 }
+
+
+
 
 /* PROMOÇÕES */
 
@@ -223,55 +306,77 @@ body {
 
 @media (max-width: 1018px) {
 
-    .categorias {
-        visibility:visible;
+    .open{
+        left: 0;
     }
 
     #logo {
         width: 350px;
     }
 
-    .menu {
+    /*NAVBAR*/
+
+    .menu{
         visibility: hidden;
     }
 
-    /*NAVBAR*/
+    #menu-btn-edit {
+        visibility: visible;
+    }
 
-    #logo_ui{
+    #menu-btn-edit:active{
+        transform: scale(0.7);
+        transition: 0.2s;
+    }
+
+    .menu-btn{
+        display: block;
+        position: fixed;
+        z-index: 2;
+    }
+
+    #logo_ui2{
+        position: absolute;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 0;
+        padding-top: 0;
         position: relative;
-        width: 100px;
+        width: 50px;
     }
 
-    .menu{
+    .mobile-bar{
+        position: fixed;
+        margin-top: 80px;
+        height: 70%;
+        left: -100%;
+        transition: 0.5s;
+        z-index: 1;
+        box-shadow: none;
+        border-radius: 40px;
+        background-color: rgb(201, 197, 255);
+        visibility: visible;
+    }
+
+    .mobile-bar ul{
         position: absolute;
-        margin-top: 70px;
-        height: 100%;
-
+        padding-top: 5px;
+        margin-top: 20px;
+        margin: 0;;
+        transition: 0.5s; 
     }
 
-    .menu ul{
-        padding-top: 20px;
-        margin-top: 10px;
-        margin: 0;
-    }
-
-    .menu ul li{
+    .mobile-bar ul li{
         width: 100%;
-        height: 50px; 
+        height: 50px;
     }
-    .menu ul li:active{
-        border: solid aqua;
+
+    .mobile-bar ul li:hover{
         background-color: none;
     }
 
-    .menu ul li:hover{
-        background-color: none;
-    }
-
-    .menu a{
+    .mobile-bar a{
         text-align: center;
         
     }
@@ -326,4 +431,7 @@ body {
         font-size: 80px;
     }
 
+   
+
 }
+

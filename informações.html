@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <link rel="shortcut icon" href="imagens/icon.png">
     <meta name="description" content="Carmen Festas e Lanches - Kit festas, Buffets, Casamentos, 15 anos, 
     Coffe Breaks, Salgados, Doces, Doces finos, Pães, Bolos, Tortas. TUDO PARA SUA FESTA!!">
@@ -15,29 +14,38 @@
 <body>
         
     <!--BOTÃO PARA ABRIR CATEGORIAS-->
-
-    <button class="categorias"><img id="categorias_img" src="imagens/categoria_botao.png" alt=""></button>
+    <div class="menu-btn">
+        <button id="menu-btn-edit" onclick="menuShow()"><img id="img-btn" src="imagens/categoria_botao.png" alt=""></button>
+    </div>
     
     <!--BARRA DE NAVEGAÇÃO-->
     <nav class="menu">
         
         <img id="logo_ui" src="imagens/LOGO_transparente.png" alt>
-        <ul>
-            <li><a href="index">Inicio</a></li>
-            <li><a href="promoções">Promoções</a></li>
-            <li><a href="produtos">Produtos</a></li>
-            <li><a href="kits">Kits</a></li>
-            <li><a href="informações">Informações</a></li>
-            <li><a href="contato">Contato</a></li>
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="promoções.html">Promoções</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="kits.html">Kits</a></li>
+            <li><a href="informações.html">Informações</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
 
-    <!--BANNER ANIMADO-->
+    <nav class="mobile-bar">
+        
+        <img id="logo_ui2" src="imagens/LOGO_transparente.png" alt>
+        <ul class="nav-menu2">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="promoções.html">Promoções</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="kits.html">Kits</a></li>
+            <li><a href="informações.html">Informações</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
 
-    <header class="banner">
-        <h1 id="informações">INFORMAÇÕES</h1>
-    </header>
+    <script src="script.js"></script>
 
-    
 </body>
 </html>
