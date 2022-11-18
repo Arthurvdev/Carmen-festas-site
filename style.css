@@ -232,7 +232,7 @@ body {
     }
 
     .menu {
-        visibility: hidden;
+        visibility: visible;
     }
 
     /*NAVBAR*/
