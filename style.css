@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(100, 100, 255);
     height: 2000px;
 }
 
@@ -14,20 +14,19 @@ body {
     margin-left: 10px;
     margin-top: 10px;
     position: absolute;
-    width: 80px;
-    height: 80px;
-    background-color: rgb(255, 255, 255);
+    width: 55px;
+    height: 55px;
+    background-color: rgb(231, 205, 255);
     border-radius: 20px;
-    visibility: hidden;
     cursor: pointer;
 }
 
 
 #categorias_img {
-    margin-top: -20px;
-    margin-left: -30px;
+    margin-top: -15px;
+    margin-left: -20px;
     position: absolute;
-    width: 60px;
+    width: 40px;
 
 }
 
@@ -59,14 +58,13 @@ body {
 }
 
 .menu ul li:hover{
-    background-color: #d0ffd0;
     margin-top: 2px;
     border-radius: 20px;
     transition: 0.1s;
 }
 
 .menu ul li:hover a{
-    color: #000000;
+    color: purple;
     transition: (0.5s);
 }
 
@@ -83,6 +81,7 @@ body {
      font-size: 20px;
     transition: (0.5s);
     transform: scale(0.8);
+    width: 150px;
 }
 
 #logo_ui{
@@ -96,7 +95,7 @@ body {
 
 .banner {
     margin-top: 0px;
-    background-color:  #d0ffd0;
+    background-color: rgb(231, 205, 255);
     width: 100%;
     height: 420px;
 }
@@ -175,6 +174,43 @@ body {
     border: #335033 solid 2px ;
 }
 
+/* PROMOÇÕES */
+
+#promoções {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(100, 100, 255);
+    font-size: 100px;
+
+}
+
+#kits {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(100, 100, 255);
+    font-size: 100px;
+
+}
+
+#produtos {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(100, 100, 255);
+    font-size: 100px;
+
+}
 
 
 
@@ -192,11 +228,7 @@ body {
 @media (max-width: 1018px) {
 
     .categorias {
-        visibility: hidden;
-    }
-
-    #logo_ui{
-        visibility: hidden;
+        visibility:visible;
     }
 
     #logo {
@@ -206,6 +238,48 @@ body {
     .menu {
         visibility: hidden;
     }
+
+    /*NAVBAR*/
+
+    #logo_ui{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 100px;
+    }
+
+    .menu{
+        position: absolute;
+        margin-top: 70px;
+        height: 100%;
+
+    }
+
+    .menu ul{
+        padding-top: 20px;
+        margin-top: 10px;
+        margin: 0;
+    }
+
+    .menu ul li{
+        width: 100%;
+        height: 50px; 
+    }
+    .menu ul li:active{
+        border: solid aqua;
+        background-color: none;
+    }
+
+    .menu ul li:hover{
+        background-color: none;
+    }
+
+    .menu a{
+        text-align: center;
+        
+    }
+
 
 
     /* responsividade Quem somos*/
@@ -247,6 +321,13 @@ body {
         display: block;
         margin-top: 50px;
         
+    }
+
+    /* PRODUTOS */
+
+    #produtos {
+        
+        font-size: 80px;
     }
 
 }
