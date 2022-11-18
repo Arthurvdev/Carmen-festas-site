@@ -1,5 +1,4 @@
 let controle = 0
-let controletela = 0
 
 function menuShow(){
 
