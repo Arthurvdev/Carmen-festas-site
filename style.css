@@ -57,22 +57,6 @@ body {
     text-align: center;
 }
 
-.menu ul li:hover{
-    margin-top: 2px;
-    border-radius: 20px;
-    transition: 0.1s;
-}
-
-.menu ul li:hover a{
-    color: purple;
-    transition: (0.5s);
-}
-
-.menu ul li:active {
-    transform: scale(0.8);
-    transition: (0.5s);
-}
-
 .menu a{
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -80,8 +64,15 @@ body {
      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      font-size: 20px;
     transition: (0.5s);
-    transform: scale(0.8);
     width: 150px;
+}
+
+.menu a:hover{
+    color: purple;
+}
+
+.menu a:active{
+    transform: scale(0.10);
 }
 
 #logo_ui{
@@ -326,7 +317,7 @@ body {
     /* PRODUTOS */
 
     #produtos {
-        
+
         font-size: 80px;
     }
 
