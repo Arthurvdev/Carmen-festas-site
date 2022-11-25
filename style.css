@@ -156,9 +156,27 @@ body{
 }
 
 
+/*Whatsapp button*/
 
+.whatsapp_button{
+    position: fixed;
+    display: block;
+    margin-right: auto;
+    margin-left: 5px;
+    bottom: 5px;
+    width: 15%;
+    transition: 0.5s;
+    z-index: 3;
 
+}
 
+.whatsapp_button:active{
+    transform: scale(0.8);
+}
+
+#whatsapp-image{
+    width: 50px;
+}
 
 
 /* banner */
@@ -250,6 +268,7 @@ body{
     padding: 60px;
     position: relative;
     font-size: 20px;
+    color: #4d2910;
     width: 50%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
