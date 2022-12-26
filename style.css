@@ -724,7 +724,7 @@ div.setaBaixo{
     }
     
     .foto1 {
-        width: 300px;
+        width: 250px;
         position: relative;
         margin-left: auto;
         margin-right: auto;
@@ -736,7 +736,7 @@ div.setaBaixo{
     /*FOOTER RESPONSIVO*/
 
     .footer{
-        top: 1300px;
+        top: 1700px;
     }
 
     .footer ul{
