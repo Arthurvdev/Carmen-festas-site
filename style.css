@@ -717,14 +717,14 @@ div.setaBaixo{
         margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
-        font-size: 12px;
+        font-size: 18px;
         width: 80%;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         padding: 15px;
     }
     
     .foto1 {
-        width: 350px;
+        width: 300px;
         position: relative;
         margin-left: auto;
         margin-right: auto;
