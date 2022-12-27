@@ -11,6 +11,22 @@ body{
     
 }
 
+.em_desenvolvimento{
+    text-align: center;
+    padding-top: 300px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px ;
+}
+
+.em_desenvolvimento h1{
+    background-color: #949494;
+    color: #ffffff;
+}
+
+
+
+
 /*Barra de Navegação*/
 
 #menu-btn-edit {
@@ -155,6 +171,20 @@ body{
 
 }
 
+#em_desenvolvimento{
+    color: black;
+    font-size: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    margin-top: 25%;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #949494;
+}
 
 /*Whatsapp button*/
 
@@ -434,6 +464,7 @@ div.setaBaixo{
     width: 100%;
     background-color: #7fbac2;
     height: 400px;
+    text-decoration: none;
 }
 
 .footer ul{
@@ -460,6 +491,7 @@ div.setaBaixo{
     list-style-type: none;
     margin-top: 15px;
     margin-left: 40px;
+    width: 50%;
 }
 
 #ul2 li{
@@ -469,6 +501,11 @@ div.setaBaixo{
     list-style-type: none;
     margin-left: 40px;
     margin-top: 2px;
+}
+
+#ul1 a{
+    text-decoration: none;
+    
 }
 
 #whatsapp{
@@ -510,11 +547,11 @@ div.setaBaixo{
     margin-top: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgb(231, 205, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 #contato_ul1{
-    color: rgb(100, 100, 255);
+    color: #4d2910;
     text-align: center;
     font-size: 100px;
     list-style-type: none;
@@ -527,6 +564,7 @@ div.setaBaixo{
 }
 
 #contato_ul1 li{
+    visibility: hidden;
     color: rgb(78, 78, 78);
     text-align: center;
     font-size: 40px;
@@ -537,9 +575,51 @@ div.setaBaixo{
     display: block;
 }
 
+#contato_whatsapp{
+    width: 300px;
+    margin-left: 50px;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+#contato_whatsapp:hover{
+    transform: scale(1.1);
+}
+
+#contato_instagram{
+    width: 250px;
+    margin-left: 550px;
+    margin-right: 0;
+    display: block;
+    position: absolute;
+    margin-top: 60px;
+    transition: 0.5s;
+}
+
+#contato_instagram:hover{
+    transform: scale(1.1);
+}
+
+#contato_facebook{
+    width: 250px;
+    margin-left: 1000px;
+    margin-right: 0;
+    display: block;
+    position: absolute;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+#contato_facebook:hover{
+    transform: scale(1.1);
+}
 
 
 /*responsividade*/
+
 
 @media (max-width: 1018px) {
 
@@ -616,6 +696,12 @@ div.setaBaixo{
     .mobile-bar a{
         text-align: center;
         
+    }
+
+    /*EM DESENVOLVIMENTO*/
+    
+    .em_desenvolvimento h1{
+        font-size: 35px;
     }
 
     /*Responsividade banner*/
@@ -755,9 +841,7 @@ div.setaBaixo{
 
     .contato_conteudo{
         height: 50%;
-        margin-top: 30%;
         border-radius: 40px;
-        box-shadow: black 0px 2px 10px 0px;
     }
     
     #contato_ul1{
@@ -770,6 +854,31 @@ div.setaBaixo{
     
     #contato_ul1 li{
         font-size: 18px;
+    }
+
+    #contato_whatsapp{
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        margin-top: 50px;
+    }
+
+    #contato_instagram{
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 170px;
+    }
+
+    #contato_facebook{
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 170px;
     }
     
 
