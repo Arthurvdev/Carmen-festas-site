@@ -52,10 +52,10 @@ body{
 
 .menu {
     width: 100%;
-    height: 60px;
+    height: 50px;
     position: fixed;
     z-index: 6;
-    background-color: rgb(255, 255, 255);
+    background-color: #f4f4f4;
     top: 0px;
     margin-top: 0px;
     box-shadow: rgb(75, 75, 75) 0px 2px 8px 0px;
@@ -65,7 +65,7 @@ body{
     position: relative;
     list-style: none;
     margin-left: 100px;
-    margin-top: 15px;
+    margin-top: 10px;
     width: 100%;
     display: block;
 }
@@ -91,7 +91,7 @@ body{
 
 .menu a:hover{
     color: (231, 81, 231);
-    border: solid #7fbac2;
+    border: solid #4d2910;
     border-radius: 20px;
 }
 
@@ -101,7 +101,7 @@ body{
 
 #logo_ui{
     position: absolute;
-    width: 60px;
+    width: 50px;
     margin-left: 30px;
 
 }
@@ -209,7 +209,57 @@ body{
 }
 
 
-/* banner */
+/* Header index */
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    top: -600px;
+  }
+  
+  .slideshow-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    
+  }
+  
+  .slideshow-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.6s ease;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .prev:hover, .next:hover {
+    scale: 0.8;
+  }
+  
+  .active {
+    opacity: 1;
+  }
+  
 
 .banner {
     margin-top: 0px;
@@ -219,6 +269,7 @@ body{
     height: 700px;
     border-radius: 0px;
     filter: brightness(35%);
+    visibility: hidden;
       
 }
 
@@ -235,6 +286,7 @@ body{
     animation-iteration-count: infinite;
     animation-direction: alternate;
     z-index: 3;
+    visibility: hidden;
 }
 
 @keyframes imagem_home1{
@@ -289,7 +341,7 @@ div.setaBaixo{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -350px;
+    margin-top: -1000px;
     font-style: oblique;
     display: block;
     color: #4d2910;
@@ -406,7 +458,7 @@ div.setaBaixo{
 
 .foto1 {
     position: relative;
-    width: 400px;
+    width: 350px;
     padding: 15px;
     margin-top: -360px;
     margin-left: 120vh;
@@ -534,6 +586,48 @@ div.setaBaixo{
     width: 40px;
     margin-top: 50px;
     margin-left: -102px;
+}
+
+/*KITS HTML*/
+
+.titulos_kits{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: #4d2910;
+    font-size: 60px;
+    margin-top: 140px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.kits_designer{
+    visibility: visible;
+}
+
+.kits_designer div{
+    background-color: #7fbac2;
+    width: 70%;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 70px;
+    padding: 40px;
+    
+}
+
+.kits_designer div p{
+    color: #0f444d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 50%;
+    font-size: 45px;
+    margin-top: 10px;
+    text-align: center;
+
 }
 
 
@@ -708,7 +802,22 @@ div.setaBaixo{
 
     .banner {
         border-radius: 0px;
+        visibility: visible;
     }
+
+    #logo {
+        visibility: visible;
+    }
+
+    .slideshow-container{
+        visibility: hidden;
+    }
+
+    .prev, .next{
+        visibility: hidden;
+    }
+
+
 
     .img_1{
         width: 100%;
@@ -722,7 +831,7 @@ div.setaBaixo{
 
     .introdução h1{
         font-size: 40px;
-        margin-top: -200px;
+        margin-top: -350px;
     }
 
     /* responsividade bem vindo*/
@@ -836,6 +945,8 @@ div.setaBaixo{
     #ul2 li{
         font-size: 14px;
     }
+
+
 
     /*CONTATO HTML RESPONSIVIDADE*/
 
