@@ -38,3 +38,5 @@ let autoSlide = setInterval(() => {
     plusSlides(1);
   }, 4000);
 
+
+

@@ -5,8 +5,9 @@
 }
 
 body{
-    background-color: #ffffff;
+    background-color: #f5eded;
     width: 100%;
+    height: 100%;
 
     
 }
@@ -55,10 +56,10 @@ body{
     height: 50px;
     position: fixed;
     z-index: 6;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     top: 0px;
     margin-top: 0px;
-    box-shadow: rgb(75, 75, 75) 0px 2px 8px 0px;
+    
 }
 
 .menu ul {
@@ -194,9 +195,9 @@ body{
     margin-right: auto;
     margin-left: 10px;
     bottom: 5px;
-    width: 15%;
+    width: 0%;
     transition: 0.5s;
-    z-index: 3;
+    z-index: 4;
 
 }
 
@@ -246,6 +247,7 @@ body{
     color: white;
     cursor: pointer;
     transition: 0.6s ease;
+    padding: 30px;
   }
   
   .next {
@@ -270,7 +272,7 @@ body{
     border-radius: 0px;
     filter: brightness(35%);
     visibility: hidden;
-      
+     
 }
 
 #logo {
@@ -343,73 +345,69 @@ div.setaBaixo{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -1000px;
+    margin-top: -1100px;
     font-style: oblique;
     display: block;
     color: #4d2910;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
     border: solid #4d2910;
-    width: 70%;
-    border-radius: 20px;
+    width: 90%;
+    border-radius: 20px;  
 }
 
-/*horário*/
 
-.img_horário {
-    width: 450px;
-    border-radius: 10px;
-    position: absolute;
-    margin-left: 60%;
-    margin-top: 10%;
-    margin-right: auto;
-    transition: 0.5s;
-    box-shadow: #949494 5px 5px 30px 5px;
-
-}
-
-.img_horário:hover{
-    transform: scale(1.1);
-}
 
 .seja_bem_vindo h1{
-    position: absolute;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 50%;
+    width: 70%;
     color: #4d2910;
     font-size: 50px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
 }
 
+
 .seja_bem_vindo p{
-    
+
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     color: #000000;
     font-size: 20px;
     text-align: center;
-    width: 40%;
-    position: absolute;
-    margin-left: 80px;
-    margin-top: 380px;
+    width: 50%;
+    margin-top: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.saibamais_botão{
+    margin-top: 50px;
+    transition: 0.5s;  
+}
+
 .seja_bem_vindo a{
-    position: absolute;
-    margin-top: 500px;
-    margin-left: 250px;
-    padding-left: 25px;
+    padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 16%;
     color: #ffffff;
     background-color: #4d2910;
     border-radius: 10px;
-    font-size: 40px;
-    transition: 0.5s;
-    cursor: pointer;
+    font-size: 35px;
     text-decoration: none;
-    
+    text-align: center;    
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    width: 15%;
 }
 
 .seja_bem_vindo a:hover{
@@ -418,57 +416,76 @@ div.setaBaixo{
 
 
 
+
+
 /*Quem somos*/
 
-.quem_somos {
-    position: absolute;
-    margin-left: auto;
-    margin-top: 700px;
-    width: 100%;
-    background-color: #7fbac2;
-    height: 550px;
-    border-radius: 40px;
+.quem_somos img{
+    width: 300px;
+    float: right;
+}
 
+.imagem_quemsomos{
+    position: relative;
+    padding: 20px;
+    border-radius: 40px;
+    border: #ffffff solid 2px;
+    top: -350px; 
+    margin-right: 100px;
+}
+
+.quem_somos {
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    background-color: #66a1a8;
+    height: 500px;
 }
 
 .quem_somos h1{
+    width: 50%;
     margin-top: 30px;
     padding: 60px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
     font-size: 60px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #4d2910;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
 
 }
 
 .quem_somos p{
     margin-top: -80px;
-    margin-left: 0;
+    padding: 60px;
+    font-size: 20px;
+    color: #ffffff;
+    width: 50%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*horário*/
+
+
+.img_horário {
+    width: 400px;
+    border-radius: 40%;
+    border: solid #4d2910;
+    padding: 10px;
+    position: relative;
+    transition: 0.2s;
+    margin-top: 80px;
+    margin-left: 34%;
     margin-right: auto;
     display: block;
-    padding: 60px;
-    position: relative;
-    font-size: 20px;
-    color: #000000;
-    width: 50%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+
+.img_horário:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+    padding: 2px;
 }
 
 
-
-.foto1 {
-    position: relative;
-    width: 350px;
-    padding: 15px;
-    margin-top: -360px;
-    margin-left: 120vh;
-    display: block;
-    border-radius: 40px;
-    border: #4d2910 solid 2px ;
-}
 
 /*PROMOÇÕES HTML*/
 
@@ -604,81 +621,105 @@ div.setaBaixo{
 
 .footer {
     position: absolute;
-    margin-top: 1500px;
+    margin-top: 90px;
     width: 100%;
-    background-color: #7fbac2;
-    height: 400px;
+    background-color: #ebebeb;
+    height: 550px;
     text-decoration: none;
+    text-align: center;
 }
 
-.footer ul{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    margin-top: 10px;
-    padding: 40px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+.footer h1{
+    margin-top: 80px;
     display: block;
     font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #4d2910;
     height: 100px;
-
-}
-
-#ul1 li{
-    color: #ffffff;
-    text-align: left;
-    font-size: 18px;
-    list-style-type: none;
-    margin-top: 15px;
-    margin-left: 40px;
-    width: 50%;
-}
-
-#ul2 li{
-    color: #ffffff;
-    text-align: left;  
-    font-size: 18px;
-    list-style-type: none;
-    margin-left: 40px;
-    margin-top: 2px;
-}
-
-#ul1 a{
-    text-decoration: none;
+    text-align: center;
     
 }
 
-#whatsapp{
-    position: absolute;
-    width: 30px;
-    margin-top: 55px;
-    margin-left: -140px;
+.footer h2{
+    margin-top: 5px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #331b0b;
+    height: 100px;
+    text-align: center;
 }
 
-#instagram {
-    position: absolute;
-    width: 25px;
-    margin-top: 15px;
-    margin-left: 1px;
-}
+.botoes-redes-sociais {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .botoes-redes-sociais a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 30%;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    
+  }
 
-#facebook {
-    position: absolute;
-    width: 25px;
-    margin-top: 15px;
-    margin-left: 1px;
-}
+  /*BOTÃO FACEBOOK FOOTER*/
+  
+  .botao-facebook {
+    background-color: #ffffff;
+    transition: 0.2s;
+  }
 
+  .botao-facebook:hover{
+      background-color: #559aa3;
+  }
+
+  .botao-facebook img{
+      width: 40px;
+  }
+  
+  /*BOTÃO WHATSAPP FOOTER*/
+
+  .botao-whatsapp {
+    background-color: #ffffff;
+    transition: 0.2s;
+  }
+
+  .botao-whatsapp:hover{
+    background-color: #559aa3;
+  }
+
+  .botao-whatsapp img{
+    width: 40px;
+  }
+
+  /*BOTÃO INSTAGRAM FOOTER*/
+  
+  .botao-instagram {
+    background-color: #ffffff;
+    transition: 0.2s;
+  }
+
+  .botao-instagram:hover{
+    background-color: #559aa3;
+  }
+  
+  .botao-instagram img{
+      width: 40px;
+  }
+  
 #local {
     position: absolute;
     width: 40px;
     margin-top: 50px;
-    margin-left: -102px;
+    margin-left: -330px;
 }
+
+  
+
+
 
 /*KITS HTML*/
 
@@ -693,6 +734,7 @@ div.setaBaixo{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
+
 
 /*.kits_designer{
     visibility: visible;
@@ -949,6 +991,14 @@ div.setaBaixo{
         font-size: 35px;
     }
 
+    /*Frase responsividade*/
+
+    .introdução h1{
+        margin-top: -500px;
+        font-size: 30px;
+    
+    }
+
     /*Responsividade banner*/
 
     .banner {
@@ -986,32 +1036,26 @@ div.setaBaixo{
         z-index: 2;
     }
 
-    /*Frase*/
-
-    .introdução h1{
-        font-size: 40px;
-        margin-top: -500px;
-    }
 
     /* responsividade bem vindo*/
 
 
 
     .img_horário {
-        width: 300px;
+        width: 400px;
         position: relative;
         margin-left: auto;
         margin-right: auto;
         display: block;
         margin-top: 100px;
-        box-shadow: #949494 0px 2px 15px 4px;
+        
     }
         
         
     .seja_bem_vindo h1{
         width: 80%;
         font-size: 35px;
-        margin-top: 50px;
+        margin-top: 100px;
         position: relative;
         margin-left: auto;
         margin-right: auto;
@@ -1028,17 +1072,8 @@ div.setaBaixo{
         display: block;
     }
 
-    .seja_bem_vindo a{
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        margin-top: 60px;
-        width: 40%;
-        padding: 10px;
-        text-align: center;
-        font-size: 35px;
-        
+    .saibamais_botão a{
+        width: 50%;
     }
 
         
@@ -1051,6 +1086,9 @@ div.setaBaixo{
         margin-top: 100px;
         width: 100%;
         height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .quem_somos h1{
@@ -1076,35 +1114,45 @@ div.setaBaixo{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         padding: 15px;
     }
+
+    .quem_somos img{
+        width: 280px;
+    }
     
-    .foto1 {
-        width: 250px;
+    .imagem_quemsomos {
+        float: none;
         position: relative;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        margin-top: 50px;
+        top: 10px; 
+        max-width: 100%;
+        margin-top: 20px;
         
+    }
+
+    .foto1 { 
+        width: 250px;
     }
 
     /*FOOTER RESPONSIVO*/
 
-    .footer{
-        top: 1700px;
-        position: relative;
+    .footer h1{
+        margin-top: 60px;
+        font-size: 38px;
     }
 
-    .footer ul{
-        font-size: 40px;
+    .footer h2{
+        font-size: 20px;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
-    #ul1 li{
-        font-size: 14px;
-    }
+    
 
-    #ul2 li{
-        font-size: 14px;
-    }
+
+
 
     /*KITS HTML RESPONSIVIDADE*/
 
