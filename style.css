@@ -828,26 +828,20 @@ div.setaBaixo{
     position: absolute;
     margin-top: 0px;
     width: 100%;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
+    height: 100%; 
 }
 
 #contato_ul1{
-    color: #4d2910;
-    text-align: center;
-    font-size: 100px;
-    list-style-type: none;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
     display: block;
-    padding-top: 100px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: 53%;
+    width: 0%;
 }
 
 #contato_ul1 li{
     visibility: hidden;
-    color: rgb(78, 78, 78);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 40px;
     list-style-type: none;
@@ -855,14 +849,15 @@ div.setaBaixo{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    
 }
 
 #contato_whatsapp{
-    width: 300px;
-    margin-left: 50px;
+    width: 100px;
+    margin-left: auto;
     margin-right: auto;
     display: block;
-    position: absolute;
+    position: relative;
     margin-top: 30px;
     transition: 0.5s;
 }
@@ -872,11 +867,11 @@ div.setaBaixo{
 }
 
 #contato_instagram{
-    width: 250px;
-    margin-left: 550px;
-    margin-right: 0;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    position: absolute;
+    position: relative;
     margin-top: 60px;
     transition: 0.5s;
 }
@@ -886,17 +881,40 @@ div.setaBaixo{
 }
 
 #contato_facebook{
-    width: 250px;
-    margin-left: 1000px;
-    margin-right: 0;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    position: absolute;
+    position: relative;
     margin-top: 50px;
     transition: 0.5s;
 }
 
 #contato_facebook:hover{
     transform: scale(1.1);
+}
+
+.contato_conteudo h1{
+    color: #4d2910;
+    text-align: center;
+    font-size: 100px;
+    list-style-type: none;
+    position: relative;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contato_conteudo h2{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #4d2910;
+    font-size: 20px;
+    padding: 80px;
 }
 
 
@@ -1171,46 +1189,34 @@ div.setaBaixo{
 
     /*CONTATO HTML RESPONSIVIDADE*/
 
-    .contato_conteudo{
-        height: 50%;
-        border-radius: 40px;
-    }
-    
-    #contato_ul1{
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-        margin-top: 0;
-        font-size: 60px;
-    }
-    
-    #contato_ul1 li{
-        font-size: 18px;
-    }
-
-    #contato_whatsapp{
+    .contato_conteudo ul a{
+        width: 10%;
+        left: -20px;
         position: relative;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 200px;
+    }
+    
+
+    #contato_whatsapp{
         margin-top: 50px;
     }
 
     #contato_instagram{
-        position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 170px;
+        width: 100px;
     }
 
     #contato_facebook{
+        width: 100px;
+    }
+
+    .contato_conteudo h1{
+        margin-left: 10px;
+    }
+
+    .contato_conteudo h2{
         position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 170px;
+        width: 300px;
+        margin-left: 10px;
     }
     
 
