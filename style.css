@@ -541,6 +541,16 @@ div.setaBaixo{
 
 /*PRODUTOS HTML*/
 
+.titulo_produtos{
+    margin-top: 120px;
+    display: block;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #4d2910;
+    height: 100px;
+    text-align: center;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -569,10 +579,13 @@ div.setaBaixo{
   .item h3 {
     font-size: 20px;
     margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #331b0b;
   }
   
   .item p {
     font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
 
@@ -776,7 +789,7 @@ div.setaBaixo{
     width: 300px;
     margin: 20px;
     padding: 10px;
-    border: 2px solid #7fbac2;
+    /*border: 2px solid #7fbac2;*/
     border-radius: 5px;
     box-shadow: 0 0 5px #ccc;
     text-align: center;
@@ -1199,24 +1212,27 @@ div.setaBaixo{
 
     #contato_whatsapp{
         margin-top: 50px;
+        width:80px;
     }
 
     #contato_instagram{
-        width: 100px;
+        width: 80px;
     }
 
     #contato_facebook{
-        width: 100px;
+        width: 80px;
     }
 
     .contato_conteudo h1{
         margin-left: 10px;
+        font-size: 60px;
     }
 
     .contato_conteudo h2{
         position: relative;
         width: 300px;
         margin-left: 10px;
+        font-size: 18px;
     }
     
 
