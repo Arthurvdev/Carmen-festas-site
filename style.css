@@ -1235,7 +1235,7 @@ div.setaBaixo{
     .contato_conteudo{
         position: relative;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
         justify-content: center;
     }
 
@@ -1262,6 +1262,7 @@ div.setaBaixo{
 
     .contato_conteudo h1{
         font-size: 60px;
+        width: 100%;
     }
 
     .contato_conteudo h2{
