@@ -1234,6 +1234,9 @@ div.setaBaixo{
 
     .contato_conteudo{
         position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .contato_conteudo ul a{
@@ -1258,7 +1261,6 @@ div.setaBaixo{
     }
 
     .contato_conteudo h1{
-        margin-left: 10px;
         font-size: 60px;
     }
 
